@@ -130,3 +130,51 @@ header {
   gap: 20px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 720px) {
+  header {
+    padding: 0px 0px;
+  }
+
+  i {
+    font-size: 24px
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 20px;
+    visibility: hidden;
+  }
+
+  .nav__icons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__photo {
+    margin-left: -78px;
+  }
+
+  .hero__info {
+    align-items: center;
+  }
+
+  .tec {
+    text-align: center;
+  }
+
+  .main {
+    align-items: center;
+    text-align: center;
+  }
+
+  .main__itens {
+    flex-direction: column;
+  }
+}
