@@ -29,9 +29,9 @@
     <header>
       <nav class="nav">
         <div class="nav__links">
-          <a href="#">Início</a>
+          <a href="../index.html">Início</a>
           <a href="#">Experiência</a>
-          <a href="./getInTouch/index.html">Entrar em contato</a>
+          <a href="./index.html">Entrar em contato</a>
         </div>
         <div class="nav__icons">
           <a href="https://github.com/Eduangelini" target="_blank">
@@ -48,51 +48,31 @@
     </header>
 
 
-    <!-- HERO SECTION -->
+    <!-- FORM SECTION -->
 
-    <section class="hero">
-      <div class="hero__info">
-        <h1>Eduardo Angelini Carvalho</h1>
-        <p>Formado em engenharia Civil e apaixonado por tecnologia, sempre buscando formas de otimizar e melhorar
-          processos, curioso e persistência, bem dosado acho que é a combinação perfeita!</p>
-        <button class="hero__ty" id="botaoAgradecimento">Agradecimento</button>
-      </div>
-      <div class="hero__photo">
-        <img src="./img/Perfil.png" alt="Foto de perfil">
-      </div>
+    <section class="container__form">
+      <h2>Entrar em contato</h2>
+      <p class="subtitle">
+        Olá, será um prazer atende-lo e tirar qualquer dúvida que venha a ter. Desde já agradeço o contato e até mais.
+      </p>
+      <form id="form" class="form" method="post" action="https://652c5c18d0d1df5273ef625e.mockapi.io/api/v1/form">
+        <label for="nome">Nome*</label>
+        <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">Email*</label>
+        <input class="input" type="email" name="email" id="email" placeholder="Digite seu melhor email" required>
+
+        <label for="whatsapp">WhatsApp*</label>
+        <input class="input" type="tel" name="whatsapp" id="whatsapp" onkeyup="handlePhone(event)"
+          placeholder=" Digite seu WhatsApp" required>
+
+        <label for="mensagem">Mensagem*</label>
+        <textarea name="mensagem" id="mensagem" class="input" cols="30" rows="10" required>Digite seu texto</textarea>
+
+        <input type="submit" value="Enviar" class="button input">
+      </form>
     </section>
 
-    <!-- MAIN? SECTION -->
-
-    <p class="tec">Tecnologias estudadas:</p>
-    <div class="main">
-      <div class="main__itens">
-        <div class="main__item">
-          <i class="fa-brands fa-html5"></i>
-          <p>HTML</p>
-        </div>
-        <div class="main__item">
-          <i class="fa-brands fa-css3-alt"></i>
-          <p>CSS</p>
-        </div>
-        <div class="main__item">
-          <i class="fa-brands fa-js"></i>
-          <p>JavaScript</p>
-        </div>
-        <div class="main__item">
-          <i class="fa-brands fa-figma"></i>
-          <p>Figma</p>
-        </div>
-        <div class="main__item">
-          <i class="fa-brands fa-github"></i>
-          <p>GitHub</p>
-        </div>
-        <div class="main__item">
-          <i class="fa-brands fa-git"></i>
-          <p>Git</p>
-        </div>
-      </div>
-    </div>
 
     <!-- FOOTER SECTION -->
 
@@ -103,7 +83,7 @@
 
   </section>
 
-  <!-- Link Javascript -->
+  <!-- Link JS -->
   <script src="script.js"></script>
 </body>
 
