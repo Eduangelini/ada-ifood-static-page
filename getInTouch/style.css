@@ -159,4 +159,23 @@ footer {
   i {
     font-size: 24px
   }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 20px;
+    visibility: hidden;
+  }
+
+  .nav__icons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container__form {
+    text-align: center;
+  }
+
+  .form {
+    text-align: left;
+  }
 }
